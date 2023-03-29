@@ -9,7 +9,7 @@ const App = () =>
     const [code, setCode] = useState<string>('')
 
     return (
-        <div className='tranpiler-area'>
+        <div className='transpiler-area'>
             <textarea
                 onChange={e => setInput(e.target.value)}
             >
