@@ -10,7 +10,7 @@ const App = () =>
 
     const onClick = () =>
     {
-
+        console.log(input)
     }
 
     return (
