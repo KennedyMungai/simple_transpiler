@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'
 const App = () =>
 {
     const [input, setInput] = useState<string>('')
+    const [code, setCode] = useState<string>('')
 
     return (
         <div>
