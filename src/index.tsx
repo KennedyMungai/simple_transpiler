@@ -20,9 +20,9 @@ const App = () =>
                     Submit
                 </button>
             </div>
-            <pre>
+            {code && <pre>
                 {code}
-            </pre>
+            </pre>}
         </div>
     )
 }
