@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom'
 
 const App = () =>
 {
+    const [input, setInput] = useState<string>('')
+
     return (
         <div>
             <textarea>
