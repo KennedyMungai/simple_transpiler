@@ -8,6 +8,11 @@ const App = () =>
     const [input, setInput] = useState<string>('')
     const [code, setCode] = useState<string>('')
 
+    const onClick = () =>
+    {
+
+    }
+
     return (
         <div className='transpiler-area'>
             <textarea
