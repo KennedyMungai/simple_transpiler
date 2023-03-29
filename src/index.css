@@ -19,3 +19,9 @@ body {
   padding: 1rem;
   border-radius: 1rem;
 }
+
+.transpiler-area button {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
