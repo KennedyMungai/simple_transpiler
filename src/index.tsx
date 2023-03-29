@@ -22,7 +22,9 @@ const App = () =>
 
             </textarea>
             <div className="">
-                <button>
+                <button
+                    onClick={onClick}
+                >
                     Submit
                 </button>
             </div>
