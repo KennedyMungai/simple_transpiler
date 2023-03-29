@@ -26,6 +26,10 @@ body {
   border: none;
 }
 
+.transpiler-area button:active {
+  scale: 0.8;
+}
+
 .transpiler-area pre {
   background-color: black;
   color: white;
