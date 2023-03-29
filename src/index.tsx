@@ -9,7 +9,9 @@ const App = () =>
 
     return (
         <div>
-            <textarea>
+            <textarea
+                onChange={e => setInput(e.target.value)}
+            >
 
             </textarea>
             <div className="">
