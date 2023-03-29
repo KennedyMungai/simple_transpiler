@@ -12,3 +12,10 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
+.transpiler-area textarea {
+  min-width: 25rem;
+  min-height: 10rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
