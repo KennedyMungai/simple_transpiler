@@ -11,6 +11,7 @@ const App = () =>
     return (
         <div className='transpiler-area'>
             <textarea
+                value={input}
                 onChange={e => setInput(e.target.value)}
             >
 
