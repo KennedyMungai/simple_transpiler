@@ -29,9 +29,12 @@ const App = () =>
                     Submit
                 </button>
             </div>
-            {code && <pre>
-                {code}
-            </pre>}
+            {
+                code &&
+                <pre>
+                    {code}
+                </pre>
+            }
         </div>
     )
 }
