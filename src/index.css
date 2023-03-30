@@ -29,6 +29,7 @@ body {
   border: none;
   background-color: #ff8855;
   color: rgb(88, 38, 1);
+  font-weight: bold;
 }
 
 .transpiler-area button:active {
