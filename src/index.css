@@ -41,4 +41,5 @@ body {
   color: white;
   padding: 1rem;
   border-radius: 1rem;
+  max-height: 40rem;
 }
