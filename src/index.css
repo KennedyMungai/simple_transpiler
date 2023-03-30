@@ -17,6 +17,8 @@ body {
 .transpiler-area textarea {
   min-width: 25rem;
   min-height: 10rem;
+  max-width: 50rem;
+  max-height: 20rem;
   padding: 1rem;
   border-radius: 1rem;
 }
