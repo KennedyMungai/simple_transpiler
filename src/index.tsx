@@ -12,12 +12,10 @@ const App = () =>
 
     const startService = async () =>
     {
-        const service = await esbuild.startService({
+        await esbuild.startService({
             worker: true,
             wasmURL: '../public/esbuild.wasm'
         })
-
-        console.log(service)
     }
 
     useEffect(() =>
