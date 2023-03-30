@@ -19,6 +19,12 @@ const App = () =>
         console.log(service)
     }
 
+    useEffect(() =>
+    {
+        startService()
+    }, [])
+
+
     const onClick = () =>
     {
         console.log(input)
