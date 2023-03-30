@@ -8,6 +8,7 @@ const App = () =>
 {
     const [input, setInput] = useState<string>('')
     const [code, setCode] = useState<string>('')
+    const ref = useRef<any>()
 
     const startService = async () =>
     {
