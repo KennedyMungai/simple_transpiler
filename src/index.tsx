@@ -12,7 +12,7 @@ const App = () =>
 
     const startService = async () =>
     {
-        await esbuild.startService({
+        ref.current = await esbuild.startService({
             worker: true,
             wasmURL: '../public/esbuild.wasm'
         })
