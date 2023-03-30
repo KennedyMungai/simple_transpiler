@@ -39,7 +39,7 @@ export const unpkgPathPlugin = () =>
                     return {
                         loader: 'jsx',
                         contents: `
-                                    const message = require('medium-test-pkg');
+                                    const message = require('axios');
                                     console.log(message);
                                 `,
                     };
