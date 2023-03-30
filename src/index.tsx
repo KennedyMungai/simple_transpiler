@@ -55,7 +55,6 @@ const App = () =>
             <div className="">
                 <button
                     onClick={onClick}
-                    disabled={!input}
                 >
                     Submit
                 </button>
