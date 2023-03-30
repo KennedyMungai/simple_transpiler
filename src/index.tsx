@@ -30,6 +30,8 @@ const App = () =>
         {
             return
         }
+
+        console.log(ref.current)
     }
 
     return (
