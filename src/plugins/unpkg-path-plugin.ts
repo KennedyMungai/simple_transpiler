@@ -20,9 +20,9 @@ export const unpkgPathPlugin = () =>
                     return {
                         loader: 'jsx',
                         contents: `
-              import message from './message';
-              console.log(message);
-            `,
+                                import message from './message';
+                                console.log(message);
+                                `,
                     };
                 } else
                 {
