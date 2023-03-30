@@ -20,7 +20,7 @@ export const unpkgPathPlugin = () =>
                 {
                     return {
                         namespace: 'a',
-                        path: new URL(args.path, args.importer + '/').href
+                        path: new URL(args.path, 'https://unpkg.com' + args.resolveDir + '/').href
                     }
                 }
 
