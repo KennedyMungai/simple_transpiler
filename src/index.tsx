@@ -14,7 +14,7 @@ const App = () =>
     {
         ref.current = await esbuild.startService({
             worker: true,
-            wasmURL: '../public/esbuild.wasm'
+            wasmURL: '/esbuild.wasm'
         })
     }
 
@@ -24,14 +24,19 @@ const App = () =>
     }, [])
 
 
-    const onClick = () =>
+    const onClick = async () =>
     {
         if (!ref.current)
         {
             return
         }
 
-        console.log(ref.current)
+        const result = await ref.current.transform(input, {
+            loader: 'jsx',
+            target: 'es2015'
+        })
+
+        setCode(result.code)
     }
 
     return (
