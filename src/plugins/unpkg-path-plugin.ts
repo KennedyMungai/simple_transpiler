@@ -9,7 +9,7 @@ export const unpkgPathPlugin = () =>
         {
             build.onResolve({ filter: /.*/ }, async (args: any) =>
             {
-                console.log('onResole', args);
+                console.log('onResolve', args);
                 return { path: args.path, namespace: 'a' };
             });
             build.onLoad({ filter: /.*/ }, async (args: any) =>
