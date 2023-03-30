@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import * as esbuild from 'esbuild-wasm'
+import { useEffect, useRef, useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import * as esbuild from 'esbuild-wasm'
 
 
 const App = () =>
