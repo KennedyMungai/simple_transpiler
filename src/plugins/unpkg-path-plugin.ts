@@ -58,13 +58,24 @@ export const unpkgPathPlugin = () =>
                     };
                 }
 
+                const cachedResult = await fileCache.getItem(args.path)
+
+                if (cachedResult)
+                {
+                    return cachedResult
+                }
+
                 const { data, request } = await axios.get(args.path);
 
-                return {
+                const result = {
                     loader: 'jsx',
                     contents: data,
                     resolveDir: new URL('./', request.responseURL).pathname
                 };
+
+                await fileCache.setItem(args.path, result)
+
+                return result
             });
         },
     };
