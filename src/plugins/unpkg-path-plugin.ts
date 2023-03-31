@@ -50,11 +50,7 @@ export const unpkgPathPlugin = (inputCode: string) =>
                 {
                     return {
                         loader: 'jsx',
-                        contents: `
-                                    const react = require('react');
-                                    const reactDOM = require('react-dom')
-                                    console.log(react, reactDOM);
-                                `,
+                        contents: inputCode
                     };
                 }
 
