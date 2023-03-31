@@ -58,7 +58,7 @@ export const unpkgPathPlugin = () =>
                     };
                 }
 
-                const cachedResult = await fileCache.getItem(args.path)
+                const cachedResult = await fileCache.getItem<esbuild.OnLoadResult>(args.path)
 
                 if (cachedResult)
                 {
