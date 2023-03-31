@@ -3,6 +3,11 @@ import axios from 'axios';
 import localforage from 'localforage';
 
 
+const fileCache = localforage.createInstance({
+    name: 'filecache'
+})
+
+
 export const unpkgPathPlugin = () =>
 {
     return {
